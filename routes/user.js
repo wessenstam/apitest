@@ -12,8 +12,9 @@ router.get('/messages', (req, res) => {
 })
 
 // Router for /users
+
 router.get('/users', (req,res) => {
-    console.log("DEBUG: Fetching user with id: "+req.params.id)
+    console.log("DEBUG: Fetching users")
     // Connect to MySQL server
     const connection = getConnection()
     
@@ -39,14 +40,15 @@ router.get('/users', (req,res) => {
     //res.end()
 })
 
+
 router.post('/user_create',(req,res)=>{
-    console.log("Trying to create a user...")
-    console.log("How do we get the form data...")
+    //console.log("Trying to create a user...")
+    //console.log("How do we get the form data...")
 
     const firstName=req.body.create_first_name
     const lastName=req.body.create_last_name
 
-    const queryString =" INSERT INTO users (first_name, last_name) values (?,?)"
+    const queryString ="INSERT INTO users (first_name, last_name) values (?,?)"
     getConnection().query(queryString, [firstName,lastName],(err, results,fields)=>{
         if(err){
         console.log("DEBUG: Failed to insert new user: "+err)
@@ -84,7 +86,7 @@ connection.query(queryString,[userid], (err,rows,fields)=>{
     res.json(users)
 })
 })
-
+/*
 router.get("/users", (req,res)=>{
 const user1={firstname: "Stephen", Lastname: "Curry"}
 const user2={firstname: "Kevin", Lastname: "Durant"}
@@ -93,10 +95,11 @@ res.json([user1,user2])
 // res.send("Nodemon auto updates when I save this file")
 })
 
+*/
 const pool = mysql.createPool({
     connectionLimit: 10,
     host: 'localhost',
-    user: 'root',
+    user: 'willem',
     password: 'nutanix/4u',
     database: 'lbta_mysql'
 })
