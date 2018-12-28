@@ -1,9 +1,9 @@
 API files from the Youtube of Brian Voong -> Build that app
 
-Part 1: https://www.youtube.com/watch?v=F7NVpxxmmgM
-Part 2: https://www.youtube.com/watch?v=mLLUqMpf5H0
-Part 3: https://www.youtube.com/watch?v=1qH-3SIFmXw&t=18s
-Part 4: https://www.youtube.com/watch?v=TQU6BWtc3yc
+Part 1: https://www.youtube.com/watch?v=F7NVpxxmmgM <BR>
+Part 2: https://www.youtube.com/watch?v=mLLUqMpf5H0 <BR>
+Part 3: https://www.youtube.com/watch?v=1qH-3SIFmXw&t=18s <BR>
+Part 4: https://www.youtube.com/watch?v=TQU6BWtc3yc <BR>
 
 Over three session build an API on nodejs and MySQL.
 
